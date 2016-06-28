@@ -1,0 +1,145 @@
+
+Public Class Form1
+    Dim valor As Integer
+    Dim recamara As String
+    Dim cocina As String
+    Dim baño As String
+    Dim casa As String
+    Dim patio As String
+    Dim sala As String
+    Dim terraza As String
+    Dim parking As String
+    Dim lavado As String
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        valor = 0
+        ' le damos valor a cada radionbutton
+        If RadioButton1.Checked = True Then valor = valor + 2000
+        If RadioButton2.Checked = True Then valor = valor + 3000
+        If RadioButton3.Checked = True Then valor = valor + 5000
+        If RadioButton4.Checked = True Then valor = valor + 3000
+        If RadioButton5.Checked = True Then valor = valor + 4500
+        If RadioButton6.Checked = True Then valor = valor + 30000
+        If RadioButton7.Checked = True Then valor = valor + 20000
+        If RadioButton8.Checked = True Then valor = valor + 4000
+        If RadioButton9.Checked = True Then valor = valor + 2000
+        If RadioButton10.Checked = True Then valor = valor + 6000
+        If RadioButton11.Checked = True Then valor = valor + 4000
+        If RadioButton12.Checked = True Then valor = valor + 5000
+        If RadioButton13.Checked = True Then valor = valor + 3500
+        If RadioButton14.Checked = True Then valor = valor + 3000
+        If RadioButton15.Checked = True Then valor = valor + 1500
+        If RadioButton16.Checked = True Then valor = valor + 4500
+        If RadioButton17.Checked = True Then valor = valor + 2500
+        If RadioButton18.Checked = True Then valor = valor + 4000
+        If RadioButton19.Checked = True Then valor = valor + 5000
+        If RadioButton20.Checked = True Then valor = valor + 7000
+        ' TextBox1.Text = "valor Total= " & valor
+        'cocina
+        If RadioButton1.Checked Then
+            cocina = "Cocina " & RadioButton1.Text
+
+        ElseIf RadioButton2.Checked Then
+            cocina = "Cocina " & RadioButton2.Text
+
+        ElseIf RadioButton3.Checked Then
+            cocina = "Cocina " & RadioButton3.Text
+        End If
+
+        'baño 
+        If RadioButton4.Checked Then
+            baño = "Baño " & RadioButton4.Text
+
+        ElseIf RadioButton5.Checked Then
+            baño = "Baño " & RadioButton5.Text
+        End If
+
+        'casa
+        If RadioButton6.Checked Then
+            casa = "Casa " & RadioButton6.Text
+
+        ElseIf RadioButton7.Checked Then
+            casa = "Casa " & RadioButton7.Text
+        End If
+
+        'patio
+        If RadioButton8.Checked Then
+            patio = "Patio " & RadioButton8.Text
+
+        ElseIf RadioButton9.Checked Then
+            patio = "Patio " & RadioButton9.Text
+        End If
+
+        'sala
+        If RadioButton10.Checked Then
+            sala = "Sala Comedor " & RadioButton10.Text
+
+        ElseIf RadioButton11.Checked Then
+            sala = "Sala Comedor " & RadioButton11.Text
+        End If
+
+        'terraza
+        If RadioButton12.Checked Then
+            terraza = "Terraza " & RadioButton12.Text
+
+        ElseIf RadioButton13.Checked Then
+            terraza = "Terraza " & RadioButton13.Text
+        End If
+
+        'parking
+        If RadioButton14.Checked Then
+            parking = "Estacionamiento " & RadioButton14.Text
+
+        ElseIf RadioButton15.Checked Then
+            parking = "Estacionamiento " & RadioButton15.Text
+
+        ElseIf RadioButton16.Checked Then
+            parking = "Estacionamiento " & RadioButton16.Text
+        End If
+
+        'lavado
+        If RadioButton17.Checked Then
+            lavado = "Lavanderia y tendedero " & RadioButton17.Text
+
+        ElseIf RadioButton18.Checked Then
+            lavado = "Lavanderia y tendedero " & RadioButton18.Text
+        End If
+
+        'recamara
+        If RadioButton19.Checked Then
+            recamara = "Recamara " & RadioButton19.Text
+
+        ElseIf RadioButton20.Checked Then
+            recamara = "Recamara " & RadioButton20.Text
+        End If
+
+        'se imprime cada los espacio y el Valor total
+        TextBox1.Text = "Espacios = " & recamara & "  /" & cocina & "    /" & baño & "  /" & casa & "    /" & patio & "   /" & sala & "   /" & terraza & "   /" & parking & "   /" & lavado & "   Valor Total = $" & valor
+
+    End Sub
+
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        RadioButton1.Checked = False
+        RadioButton2.Checked = False
+        RadioButton3.Checked = False
+        RadioButton4.Checked = False
+        RadioButton5.Checked = False
+        RadioButton6.Checked = False
+        RadioButton7.Checked = False
+        RadioButton8.Checked = False
+        RadioButton9.Checked = False
+        RadioButton10.Checked = False
+        RadioButton11.Checked = False
+        RadioButton12.Checked = False
+        RadioButton13.Checked = False
+        RadioButton14.Checked = False
+        RadioButton15.Checked = False
+        RadioButton16.Checked = False
+        RadioButton17.Checked = False
+        RadioButton18.Checked = False
+        RadioButton19.Checked = False
+        RadioButton20.Checked = False
+        TextBox1.Text = ""
+    End Sub
+End Class

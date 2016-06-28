@@ -1,0 +1,26 @@
+Public Class Form1
+    Dim f, g, a, b, c As Single
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        a = TextBox1.Text
+        b = TextBox2.Text
+        c = TextBox3.Text
+        f = a + b
+        g = b + c
+        TextBox5.Text = f + g
+        If f <> g Then
+            MsgBox(" Las Sumas Son Diferentes " & "  " & " Primera Suma: " & (a) & "+" & (b) & "= " & (f) & " " & "Segunda Suma: " & (b) & "+" & (c) & "= " & (g))
+            'TextBox5.Text = "Las Sumas Son Iguales" & " Primera Suma = " & Trim(f) & " Segunda Suma = " & (g)
+        Else : f = g
+            MsgBox("Las Sumas Son Iguales" & "  " & " Primera Suma = " & (f) & "   Segunda Suma = " & (g))
+            'TextBox5.Text = "Las Sumas Son Diferentes" & " Resultado = " & Trim(g) ' & "Variables:"(a) & "+" & (b) & "+" & (c)
+        End If
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox5.Text = ""
+    End Sub
+End Class
